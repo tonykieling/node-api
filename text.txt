@@ -1,0 +1,10 @@
+install
+ express
+ nodemon
+
+- first commit
+ initial version is already running:
+ - server with express and nodemon
+ - routes for ping, post, and invalid routes
+ - ping and invalid route are done
+ ? missing build post controller
