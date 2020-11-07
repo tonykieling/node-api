@@ -3,12 +3,13 @@ const express = require("express");
 const server  = express();
 const PORT    = process.env.PORT || 3456;
 
-const pingRoutes    = require("./routes/ping.js");
-const postRoutes    = require("./routes/post.js")
+// const pingRoutes    = require("./routes/ping.js");
+// const postRoutes    = require("./routes/post.js")
+const apiRoutes    = require("./routes/api.js")
 const invalidRoute  = require("./routes/invalidRoute.js");
 
-server.use("/ping", pingRoutes);
-server.use("/posts", postRoutes);
+server.use("/api", apiRoutes);
+server.use("/api", apiRoutes);
 
 server.use("*", invalidRoute);
 

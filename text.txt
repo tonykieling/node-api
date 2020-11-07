@@ -8,3 +8,10 @@ install
  - routes for ping, post, and invalid routes
  - ping and invalid route are done
  ? missing build post controller
+
+- second commit
+ - this commit contains a new build for /api route
+ - error message was nicelly formatted
+ - posts controller was initiallized
+ - /api/ping is working well, as /api/posts
+ ? missing the cominucation with the external api
