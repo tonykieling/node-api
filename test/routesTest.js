@@ -1,7 +1,11 @@
+/**
+ * method to perform routes test
+ */
 
 (async () => {
   const axios = require("axios");
 
+  // parameters
   const DOMAIN  = "localhost";
   const PORT    = 3456;
   const PATH    = "api/ping"
