@@ -14,4 +14,13 @@ install
  - error message was nicelly formatted
  - posts controller was initiallized
  - /api/ping is working well, as /api/posts
- ? missing the cominucation with the external api
+ ? missing the communication with the external api
+
+install axios
+
+- third commit
+ - communication with external api is working
+ - error being handled
+ - merging all posts
+ - removing duplicated posts
+ - doing tests using console.log
