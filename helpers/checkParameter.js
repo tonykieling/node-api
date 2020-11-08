@@ -4,8 +4,6 @@ module.exports = checkSortByParameter = (param, type, acceptableParameters) => {
   if (checkingParameter.length === 0) {
     console.log(`WRONG ${type} parameter`);
     return false;
-    // const message = formattingMessage(acceptableParameters);
-    // return response.status(400).json({error: `${type} parameter is invalid. Consider using these options: ${message}`});
   }
   else {
     console.log(`${type} is OK`);

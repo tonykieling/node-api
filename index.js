@@ -3,12 +3,12 @@ const express = require("express");
 const server  = express();
 const PORT    = process.env.PORT || 3456;
 
-// const pingRoutes    = require("./routes/ping.js");
-// const postRoutes    = require("./routes/post.js")
 const apiRoutes    = require("./routes/api.js")
+
+// it is gonna be called when the client did not provide a valid route
 const invalidRoute  = require("./routes/invalidRoute.js");
 
-server.use("/api", apiRoutes);
+// it goes to the express router
 server.use("/api", apiRoutes);
 
 server.use("*", invalidRoute);

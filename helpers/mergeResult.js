@@ -1,4 +1,3 @@
-// const post = require("../controllers/post");
 
 // this method sort the array of onjects by their .id
 const compare = (a, b) => {

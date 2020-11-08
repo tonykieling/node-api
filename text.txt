@@ -24,3 +24,9 @@ install axios
  - merging all posts
  - removing duplicated posts
  - doing tests using console.log
+
+- forth commit
+ - system is working
+ - test for routes is working
+ - code cleaned up
+ - ready to be sent
