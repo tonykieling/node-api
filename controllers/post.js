@@ -47,12 +47,12 @@ const simplePost = async (request, response) => {
   }
 
 
-  const hatchwaysApi  = "https://api.hatchways.io/assessment/blog/posts";
+  const api  = require("../api-address.js")();
   const tagsArray = tags.split(",");
 
   if (tagsArray.length === 1) {
     const parameters  = `?tag=${tagsArray[0]}&sortBy=${sortBy}&direction=${direction}`;
-    const url         = `${hatchwaysApi}${parameters}`;
+    const url         = `${api}${parameters}`;
     const result = await axiosQuery(url);
 
     return response.status(result.error ? 400 : 200).json(formattingSuccessMessage(result.posts));
@@ -60,7 +60,7 @@ const simplePost = async (request, response) => {
     try {
       const arrayOfAxiosQueries = tagsArray.map(tag => {
         const parameters    = `?tag=${tag}&sortBy=${sortBy}&direction=${direction}`;
-        const url           = `${hatchwaysApi}${parameters}`;
+        const url           = `${api}${parameters}`;
   
         return axiosQuery(url);
       });

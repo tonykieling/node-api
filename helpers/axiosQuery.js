@@ -4,7 +4,9 @@ module.exports = axiosQuery = async url => {
   try {
     const axiosQuery = await axios(url);
     
-    return({posts: axiosQuery.data.posts});
+    return({
+      posts: axiosQuery.data.posts
+    });
     
   }catch(error){
     console.log("error on axios request");

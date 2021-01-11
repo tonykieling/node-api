@@ -1,11 +1,6 @@
 
 // this method sort the array of onjects by their .id
-const compare = (a, b) => {
-  if (a.id > b.id) return 1;
-  if (b.id > a.id) return -1;
-
-  return 0;
-};
+const compare = (a, b) => ((a.id > b.id) ? 1 : (a.id < b.id) ? -1 : 0);
 
 // it removes duplicated posts
 const removeDuplicated = allSortedPosts => {

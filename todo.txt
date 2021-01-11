@@ -1,0 +1,18 @@
+# Goal: Build an API to fetch data.
+
+# Route 1: /api/ping
+- Method: GET
+- Response: JSON "succes": "true", status 200
+
+# Route 2: /api/posts
+- Method: GET
+- Query Parameters:
+ - field1: tags, type: String (mandatory), list of option separeted by comma
+ - field2: sortBy, type String (optional), sort the posts by fields. Default: id
+ - field3: direction, type: String (optional), asc or desc, Default: asc
+- Response: list of all blog posts regarding the received parameters.
+
+# Error response,
+- Missing tags: JSON "error": "Tags parameter is required", status 400
+- sortBy or direction with invalid values: "error": "(sortBy or direction) parameter is invalid"
+*both status 400

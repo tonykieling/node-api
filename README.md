@@ -13,5 +13,4 @@ In case to set another port, please go to `./index.js` and change the binding ca
 
 Route tests may be perfomed running `node ./test/routesTest.js` - feel free to change the parameters.
 
-Regards,  
-Tony Kieling
+

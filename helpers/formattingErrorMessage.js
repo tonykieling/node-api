@@ -12,6 +12,7 @@ module.exports = formattingErrorMessage = options => {
       message += ` '${options[i]}'${(optionsLength > 2) ? "," : ""}`;
     }
   };
+  
   return message;
 }
 

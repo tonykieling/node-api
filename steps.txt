@@ -30,3 +30,6 @@ install axios
  - test for routes is working
  - code cleaned up
  - ready to be sent
+
+- fifth commit
+  - cleanup and small changes in order to push to github
